@@ -2,7 +2,6 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import {
-  RiCopyrightLine,
   RiHeartFill,
   RiMailLine,
   RiMapPinLine,
@@ -19,7 +18,7 @@ const Footer = () => {
             <Logo />
           </Link>
           <p className="text-base text-gray-700  gap-2 justify-center items-center">
-            <span className="text-2xl font-semibold">Contact Details:</span>
+            <span className="text-xl font-semibold">Contact Details</span>
             <span className="flex flex-wrap gap-2 text-xl text-gray-500">
               {" "}
               <RiMapPinLine color="blue" />
@@ -54,15 +53,12 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="footer__copyright-link flex justify-center items-center gap-2 py-4 font-semibold">
+      <div className="flex justify-center items-center py-4 gap-1">
         Made with <RiHeartFill color="red" size={20} />{" "}
-        {new Date().getFullYear()}
-        <br />
-        <span className="font-semibold flex justify-center items-center gap-2">
-          {" "}
-          <RiCopyrightLine className="text-gray-700" />
-          All rights reserved by <Logo />
-        </span>{" "}
+        {new Date().getFullYear()} by{" "}
+        <span className="text-xl font-bold">
+          spheri<span className="text-orange-600">soft</span>
+        </span>
       </div>
     </footer>
   );
