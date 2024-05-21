@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
+import CustomButton from "./CustomButton";
 
 const Navbar = () => {
   return (
@@ -9,6 +10,12 @@ const Navbar = () => {
         <Link href={"/"} className="flex justify-center items-center">
           <Logo />
         </Link>
+
+        <CustomButton
+          title="Sign In"
+          btnType="button"
+          containerStyles="text-primary-blue rounded-full bg-white min-w-[130px] border-2 border-blue-600"
+        />
       </nav>
     </header>
   );
