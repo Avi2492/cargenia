@@ -56,7 +56,7 @@ const Footer = () => {
       <div className="flex justify-center items-center py-4 gap-1">
         Made with <RiHeartFill color="red" size={20} />{" "}
         {new Date().getFullYear()} by{" "}
-        <span className="text-xl font-bold">
+        <span className="text-xl  font-bold">
           spheri<span className="text-orange-600">soft</span>
         </span>
       </div>

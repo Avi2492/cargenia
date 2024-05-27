@@ -1,3 +1,5 @@
+import { CarProps } from "@/types";
+
 export const calculateCarRent = (city_mpg: number, year: number) => {
   const basePricePerDay = 50; // Base rental price per day in dollars
   const mileageFactor = 0.1; // Additional rate per mile driven
@@ -30,3 +32,21 @@ export async function fetchCars() {
 
   return result;
 }
+
+export const generateCarImageUrl = async (car: CarProps, angle?: string) => {
+  // iq480lm2s_4iuwpb4xn_fb85x9q2y
+
+  const response = await fetch("./dataImages.json");
+
+  const { make, year, model } = car;
+
+  response.searchParams.append("customer", process.env.CARXE_APIKEY!);
+
+  response.searchParams.append("make", make);
+  response.searchParams.append("modelFamily", model.split(" ")[0]);
+  response.searchParams.append("zoomType", "fullscreen");
+  response.searchParams.append("modelYear", `${year}`);
+  response.searchParams.append("angle", `${angle}`);
+
+  return `${response}`;
+};
