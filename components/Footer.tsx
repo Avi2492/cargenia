@@ -32,7 +32,7 @@ const Footer = () => {
             <span className="flex flex-wrap gap-2 text-xl text-gray-500">
               {" "}
               <RiMailLine color="blue" />
-              cargenia@gmail.com
+              rentndrive@gmail.com
             </span>
           </p>
         </div>
