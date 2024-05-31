@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Cargenia",
+  title: "rentNDrive",
   description: "Discover the best cars in the city",
 };
 
