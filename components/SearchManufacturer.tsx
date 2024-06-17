@@ -1,12 +1,12 @@
 "use client";
-import {
-  Combobox,
-  ComboboxInput,
-  ComboboxButton,
-  ComboboxOption,
-  ComboboxOptions,
-  Transition,
-} from "@headlessui/react";
+// import {
+//   Combobox,
+//   ComboboxInput,
+//   ComboboxButton,
+//   ComboboxOption,
+//   ComboboxOptions,
+//   Transition,
+// } from "@headlessui/react";
 
 import { SearchManufacturerProps } from "@/types";
 import React, { useState, Fragment, act } from "react";
@@ -31,7 +31,7 @@ const SearchManufacturer = ({
 
   return (
     <div className="search-manufacturer">
-      <Combobox value={selected} onChange={setSelected}>
+      {/* <Combobox value={selected} onChange={setSelected}>
         <div className="w-full relative">
           <ComboboxButton className="absolute top-[14px]">
             <RiSearchLine className="ml-4" />
@@ -83,7 +83,7 @@ const SearchManufacturer = ({
             </ComboboxOptions>
           </Transition>
         </div>
-      </Combobox>
+      </Combobox> */}
     </div>
   );
 };

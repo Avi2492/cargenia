@@ -3,13 +3,13 @@ import { Fragment, useState } from "react";
 import { useRouter } from "next/navigation";
 
 import { CustomFilterProps } from "@/types";
-import {
-  Listbox,
-  ListboxButton,
-  ListboxOption,
-  ListboxOptions,
-  Transition,
-} from "@headlessui/react";
+// import {
+//   Listbox,
+//   ListboxButton,
+//   ListboxOption,
+//   ListboxOptions,
+//   Transition,
+// } from "@headlessui/react";
 import { RiExpandUpDownLine } from "@remixicon/react";
 import { updateSearchParams } from "@/utils";
 
@@ -19,7 +19,7 @@ const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
 
   return (
     <div className="w-fit">
-      <Listbox
+      {/* <Listbox
         value={selected}
         onChange={(e) => {
           setSelected(e);
@@ -63,7 +63,7 @@ const CustomFilter = ({ title, options, setFilter }: CustomFilterProps) => {
             </ListboxOptions>
           </Transition>
         </div>
-      </Listbox>
+      </Listbox> */}
     </div>
   );
 };

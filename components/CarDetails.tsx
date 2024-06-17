@@ -1,11 +1,11 @@
 "use client";
 import { CarProps } from "@/types";
-import {
-  Dialog,
-  DialogPanel,
-  Transition,
-  TransitionChild,
-} from "@headlessui/react";
+// import {
+//   Dialog,
+//   DialogPanel,
+//   Transition,
+//   TransitionChild,
+// } from "@headlessui/react";
 import { RiCloseLine } from "@remixicon/react";
 import Image from "next/image";
 import React, { Fragment } from "react";
@@ -21,7 +21,7 @@ interface CarDetailsProps {
 const CarDetails = ({ isOpen, closeModel, car }: CarDetailsProps) => {
   return (
     <>
-      <Transition appear show={isOpen} as={Fragment}>
+      {/* <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className={"relative z-10"} onClose={closeModel}>
           <TransitionChild
             as={Fragment}
@@ -133,7 +133,7 @@ const CarDetails = ({ isOpen, closeModel, car }: CarDetailsProps) => {
             </div>
           </div>
         </Dialog>
-      </Transition>
+      </Transition> */}
     </>
   );
 };
