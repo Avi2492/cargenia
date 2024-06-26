@@ -11,11 +11,14 @@ const Navbar = () => {
           <Logo />
         </Link>
 
-        <CustomButton
-          title="Sign In"
-          btnType="button"
-          containerStyles="text-primary-blue rounded-full bg-white min-w-[130px] border-2 border-blue-600"
-        />
+        <Link href={"/sign-up"}>
+          <CustomButton
+            title="Sign In"
+            btnType="button"
+            containerStyles="text-primary-blue rounded-full bg-white min-w-[130px] border-2 border-blue-600"
+            isDisabled
+          />
+        </Link>
       </nav>
     </header>
   );
